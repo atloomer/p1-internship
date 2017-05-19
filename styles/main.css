@@ -1,0 +1,200 @@
+/* Fonts */
+@font-face {
+	font-family: fontOne;
+	src: url('assets/fonts/rbn-bold-webfont.woff2') format (woff2),
+	url('assets/fonts/rbn-bold-webfont.woff') format (woff);
+}
+
+@font-face {
+	font-family: fontTwo;
+	src: url('assets/fonts/rbn-light-webfont.woff2') format(woff2),
+	url('assets/fonts/rbn-light-webfont.woff') format (woff);
+}
+
+/* Main */
+body {
+	margin: 0;
+}
+
+/* Headers */
+h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	font-size: 3em;
+	font-family: 'fontOne';
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #494849;
+	font-size: 2em;
+	margin: 0;
+	font-family: 'fontOne';
+}
+
+h3 {
+	color: #494849;
+	font-weight: lighter;
+	font-size: 1em;
+	margin: 0;
+	font-family: 'fontTwo';
+}
+
+/* Navigation */
+nav {
+	display: flex;
+	height: 90px;
+	width: 90%;
+	padding: 0 5%;
+	background: #ca2227;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+img.logo {
+	width: 115px;
+}
+
+img.nav-icon {
+	width: 30px;
+}
+
+/*  Nav info display on click  */
+.nav-info {
+	width: 100%;
+	background: #1e1e1e;
+	padding: 50px 0;
+}
+
+.nav-info ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-info a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'rbn-light-webfont', sans-serif;
+	font-weight: lighter;
+	transition: .1s ease-Out;
+}
+
+.nav-info a:hover {
+	color: gray;
+}
+
+.nav-info li {
+	cursor: pointer;
+	list-style-type: none;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+/*  Header  */
+header {
+	height: 50vh;
+	margin: 0;
+	background: url('http://alabamahorsecouncil.org/wp/wp-content/uploads/2011/10/horsesdee.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 5px solid #ca2227;
+}
+
+#title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 150px;
+	background: rgba(30, 30, 30, 0.45);
+}
+
+#title h1 {   
+	color: #fff;
+	margin-left: 5%;
+}
+
+/* Gallery Wrapper */
+#gallery {
+	width: 90%;
+	padding: 100px 5%;
+}
+
+/* Gallery Header */
+#gallery-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 40%;
+	border-bottom: 3px solid #ca2227;
+	margin-left: 5%;
+	padding: 100px 0 20px;
+}
+
+/*  Gallery */
+#gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	padding: 50px 5%;
+	align-items: center;
+	justify-content: center;
+}
+
+#gallery li {
+	height: auto;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+#gallery li img {
+	width: 300px;
+}
+
+#gallery a {
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	height: 290px;
+    width: 290px;
+	background: rgba(255, 255, 255, 0.34);
+	opacity: 0;
+	border: 5px solid #ca2227;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .2s ease-Out; 
+}
+
+#gallery .overlay img {
+	width: 100px;
+}
+
+#gallery li:hover .overlay {
+	opacity: 1;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width:768px){
+
+	header {
+		height: 60vh;
+	}
+
+}
+
+
+
